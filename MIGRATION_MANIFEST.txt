@@ -1,0 +1,49 @@
+INTERVIEW WORKBENCH MIGRATION MANIFEST
+
+PROJECT ROOT
+interview-workbench/
+
+PARENT PROJECT
+repository root (parent directory)
+
+KEEP
+src/
+docs/
+HANDOFF.md
+README.md
+LICENSE
+package.json
+package-lock.json
+vite.config.ts
+tsconfig.json
+tsconfig.app.json
+tsconfig.node.json
+index.html
+agent-reach-bridge.ts
+agent-reach-bridge.test.ts
+deepseek-interview-bridge.ts
+deepseek-interview-bridge.test.ts
+.env.example
+.gitignore
+
+ALSO KEEP FROM PARENT
+AGENTS.md
+README.md
+outputs/MVP_PRD_V0.1.md
+docs/DECISIONS.md
+docs/WORKFLOW.md
+
+DO NOT COPY / DO NOT SHARE
+node_modules/
+dist/
+.env.local
+API keys
+browser cookies or profiles
+temporary collection output
+real resume exports unless explicitly intended
+
+USER DATA
+Browser localStorage key: xiangqian.interview-workbench.v6
+Export the workbench JSON from the old page before migration.
+The current UI provides "导入备份": it validates and previews a V1-V6 JSON backup, then fully replaces the current workbench only after explicit confirmation.
+DeepSeek BYOK is process-memory only and must be configured again.

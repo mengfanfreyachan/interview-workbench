@@ -1,0 +1,593 @@
+{
+  "schemaVersion": "interview.question-composition-observation.v1",
+  "generatedAt": "2026-08-14T09:05:31.246Z",
+  "runPolicy": {
+    "liveCalls": true,
+    "attemptsPerCase": 1,
+    "retries": false,
+    "storesRawMaterials": false,
+    "storesRawModelResponse": false
+  },
+  "cases": [
+    {
+      "caseId": "product",
+      "label": "产品 Golden Case",
+      "targetRole": "AI 产品经理",
+      "inputFingerprint": "8077755dfbd3ea56",
+      "attemptedAt": "2026-08-14T09:05:31.246Z",
+      "callStatus": "completed",
+      "model": "deepseek-v4-pro",
+      "machineStatus": "fail",
+      "rubric": [
+        {
+          "id": "bounded_output",
+          "label": "题目数量保持在 1–12 道",
+          "status": "pass",
+          "detail": "有效题目 8 道。"
+        },
+        {
+          "id": "source_integrity",
+          "label": "来源 ID、类型与引文可核验",
+          "status": "pass",
+          "detail": "全部题目来源通过脱敏报告复核。"
+        },
+        {
+          "id": "provenance_integrity",
+          "label": "真题与模型衍生题来源标记正确",
+          "status": "pass",
+          "detail": "来源标记符合协议。"
+        },
+        {
+          "id": "source_question_fidelity",
+          "label": "保留的面经原题逐字一致",
+          "status": "pass",
+          "detail": "逐字保留 1 道面经原题。"
+        },
+        {
+          "id": "target_isolation",
+          "label": "只引用当前岗位材料",
+          "status": "pass",
+          "detail": "仅允许 JD-01、CV-01 和当前岗位面经来源 ID。"
+        },
+        {
+          "id": "deduplication",
+          "label": "题目不重复",
+          "status": "fail",
+          "detail": "发现 1 道归一化重复题。"
+        },
+        {
+          "id": "single_focus",
+          "label": "每道题保持单一问题",
+          "status": "pass",
+          "detail": "未发现多问句或明显并列追问。"
+        },
+        {
+          "id": "non_template_jd",
+          "label": "不使用模板式 JD 复述题",
+          "status": "pass",
+          "detail": "未发现通用“JD 提到……如何做到”题。"
+        },
+        {
+          "id": "category_coverage",
+          "label": "简历题和专业／JD 题均有覆盖",
+          "status": "pass",
+          "detail": "本次覆盖：role_capability、resume_deep_dive。"
+        },
+        {
+          "id": "category_balance",
+          "label": "两类题数量差不超过 2 道",
+          "status": "pass",
+          "detail": "简历题 5 道，岗位能力题 3 道，数量差 2 道。"
+        },
+        {
+          "id": "legal_scenario_coverage",
+          "label": "法务岗位包含至少 2 道模型情境题",
+          "status": "pass",
+          "detail": "非法律岗位，不适用。"
+        },
+        {
+          "id": "partial_success",
+          "label": "单题失败不清空有效结果",
+          "status": "pass",
+          "detail": "保留有效题，并记录 2 条 warning。"
+        }
+      ],
+      "questions": [
+        {
+          "index": 1,
+          "title": "你如何判断一个 AI 功能是真需求而不是技术展示？",
+          "category": "role_capability",
+          "provenance": "source_question",
+          "sourceKinds": [
+            "interview_experience"
+          ],
+          "sourceIds": [
+            "golden-product-source"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 2,
+          "title": "你在简历中写到“推动引导流程上线后激活率由 31% 提升至 44%”，这个结果指标具体是怎么定义的？",
+          "category": "resume_deep_dive",
+          "provenance": "source_derived",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 3,
+          "title": "“结合任务频率、失败成本和实现周期制定版本方案”中，最关键的取舍是什么？",
+          "category": "resume_deep_dive",
+          "provenance": "source_derived",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 4,
+          "title": "“建立每周复盘机制并交付可测试版本”中，你选择这套方法的关键依据是什么？",
+          "category": "resume_deep_dive",
+          "provenance": "source_derived",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 5,
+          "title": "你提到“通过 18 次用户研究访谈与漏斗分析识别新用户激活障碍”，当时你如何判断访谈已经足够，而不是继续增加样本量？",
+          "category": "resume_deep_dive",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 6,
+          "title": "在“推动引导流程上线后激活率由 31% 提升至 44%”这个结果中，你如何排除同期其他改动或自然增长的影响？",
+          "category": "resume_deep_dive",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 7,
+          "title": "假设你负责一个生成式 AI 产品，研发团队提出用最新的大模型重构核心功能，但用户调研显示现有功能已满足需求且重构风险高，你会如何决策？",
+          "category": "role_capability",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "jd"
+          ],
+          "sourceIds": [
+            "JD-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 8,
+          "title": "你如何判断一个 AI 功能是真需求而不是技术展示？",
+          "category": "role_capability",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "interview_experience"
+          ],
+          "sourceIds": [
+            "golden-product-source"
+          ],
+          "quotedSourceCount": 1
+        }
+      ],
+      "warningCodes": [
+        "CATEGORY_BALANCE_LIMIT",
+        "CATEGORY_BALANCE_LIMIT"
+      ],
+      "questionCount": 8,
+      "manualReview": {
+        "status": "warn",
+        "roleRelevance": "通过。保留题覆盖需求真实性、指标口径与归因、优先级取舍、研究样本和技术重构决策。",
+        "questionDepth": "通过。模型题从模板复述转为样本充分性、结果归因和研发冲突下的决策，且题面均为单一焦点。",
+        "coverageBalance": "需关注。名义配比为简历 5 道、岗位能力 3 道，但第 8 题复制第 1 道面经原题，实际只有 7 道唯一题。",
+        "notes": "三项目标均改善；本轮新发现生成题可能复制已精选原题，随后已补确定性去重门禁，但没有重跑本轮。"
+      }
+    },
+    {
+      "caseId": "operations",
+      "label": "运营 Golden Case",
+      "targetRole": "产品运营",
+      "inputFingerprint": "a8102d35a51cc445",
+      "attemptedAt": "2026-08-14T09:05:46.998Z",
+      "callStatus": "completed",
+      "model": "deepseek-v4-pro",
+      "machineStatus": "fail",
+      "rubric": [
+        {
+          "id": "bounded_output",
+          "label": "题目数量保持在 1–12 道",
+          "status": "pass",
+          "detail": "有效题目 8 道。"
+        },
+        {
+          "id": "source_integrity",
+          "label": "来源 ID、类型与引文可核验",
+          "status": "pass",
+          "detail": "全部题目来源通过脱敏报告复核。"
+        },
+        {
+          "id": "provenance_integrity",
+          "label": "真题与模型衍生题来源标记正确",
+          "status": "pass",
+          "detail": "来源标记符合协议。"
+        },
+        {
+          "id": "source_question_fidelity",
+          "label": "保留的面经原题逐字一致",
+          "status": "pass",
+          "detail": "逐字保留 1 道面经原题。"
+        },
+        {
+          "id": "target_isolation",
+          "label": "只引用当前岗位材料",
+          "status": "pass",
+          "detail": "仅允许 JD-01、CV-01 和当前岗位面经来源 ID。"
+        },
+        {
+          "id": "deduplication",
+          "label": "题目不重复",
+          "status": "fail",
+          "detail": "发现 1 道归一化重复题。"
+        },
+        {
+          "id": "single_focus",
+          "label": "每道题保持单一问题",
+          "status": "pass",
+          "detail": "未发现多问句或明显并列追问。"
+        },
+        {
+          "id": "non_template_jd",
+          "label": "不使用模板式 JD 复述题",
+          "status": "pass",
+          "detail": "未发现通用“JD 提到……如何做到”题。"
+        },
+        {
+          "id": "category_coverage",
+          "label": "简历题和专业／JD 题均有覆盖",
+          "status": "pass",
+          "detail": "本次覆盖：resume_deep_dive、role_capability。"
+        },
+        {
+          "id": "category_balance",
+          "label": "两类题数量差不超过 2 道",
+          "status": "pass",
+          "detail": "简历题 5 道，岗位能力题 3 道，数量差 2 道。"
+        },
+        {
+          "id": "legal_scenario_coverage",
+          "label": "法务岗位包含至少 2 道模型情境题",
+          "status": "pass",
+          "detail": "非法律岗位，不适用。"
+        },
+        {
+          "id": "partial_success",
+          "label": "单题失败不清空有效结果",
+          "status": "pass",
+          "detail": "保留有效题，并记录 1 条 warning。"
+        }
+      ],
+      "questions": [
+        {
+          "index": 1,
+          "title": "你在简历中写到“次日留存由 24% 提升至 31%”，这个结果指标具体是怎么定义的？",
+          "category": "resume_deep_dive",
+          "provenance": "source_derived",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 2,
+          "title": "“负责建立创作者分层运营规则”中，你选择这套方法的关键依据是什么？",
+          "category": "resume_deep_dive",
+          "provenance": "source_derived",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 3,
+          "title": "“在预算受限情况下协调产品与渠道资源上线主题活动”中，最大的执行约束是什么？",
+          "category": "resume_deep_dive",
+          "provenance": "source_derived",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 4,
+          "title": "当活动曝光增长但转化下降时，你会先检查什么？",
+          "category": "role_capability",
+          "provenance": "source_question",
+          "sourceKinds": [
+            "interview_experience"
+          ],
+          "sourceIds": [
+            "golden-operations-source"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 5,
+          "title": "你提到“次日留存由 24% 提升至 31%”，这个提升中你个人直接负责的实验改动是什么？",
+          "category": "resume_deep_dive",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 6,
+          "title": "在建立创作者分层运营规则时，你如何定义“活跃度”和“内容质量”这两个分层维度？",
+          "category": "resume_deep_dive",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 7,
+          "title": "当活动曝光增长但转化下降时，你会先检查什么？",
+          "category": "role_capability",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "interview_experience"
+          ],
+          "sourceIds": [
+            "golden-operations-source"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 8,
+          "title": "如果产品团队坚持一个你认为会降低核心用户留存的功能改动，你会如何用数据说服他们？",
+          "category": "role_capability",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "jd"
+          ],
+          "sourceIds": [
+            "JD-01"
+          ],
+          "quotedSourceCount": 1
+        }
+      ],
+      "warningCodes": [
+        "CATEGORY_BALANCE_LIMIT"
+      ],
+      "questionCount": 8,
+      "manualReview": {
+        "status": "warn",
+        "roleRelevance": "通过。题目覆盖留存口径、分层依据、预算约束、个人贡献和跨团队数据说服。",
+        "questionDepth": "通过。模型题聚焦个人实验改动、分层定义和产品冲突下的数据沟通，未出现模板 JD 复述或多重问句。",
+        "coverageBalance": "需关注。名义配比为简历 5 道、岗位能力 3 道，但第 7 题复制第 4 道面经原题，实际只有 7 道唯一题。",
+        "notes": "目标质量改善明确；重复题问题已转成确定性回归和服务端跳过规则，本轮保持原样、不重试。"
+      }
+    },
+    {
+      "caseId": "legal",
+      "label": "法务 Golden Case",
+      "targetRole": "法务专员",
+      "inputFingerprint": "ae9d75fa14491b4c",
+      "attemptedAt": "2026-08-14T09:06:00.638Z",
+      "callStatus": "completed",
+      "model": "deepseek-v4-pro",
+      "machineStatus": "pass",
+      "rubric": [
+        {
+          "id": "bounded_output",
+          "label": "题目数量保持在 1–12 道",
+          "status": "pass",
+          "detail": "有效题目 6 道。"
+        },
+        {
+          "id": "source_integrity",
+          "label": "来源 ID、类型与引文可核验",
+          "status": "pass",
+          "detail": "全部题目来源通过脱敏报告复核。"
+        },
+        {
+          "id": "provenance_integrity",
+          "label": "真题与模型衍生题来源标记正确",
+          "status": "pass",
+          "detail": "来源标记符合协议。"
+        },
+        {
+          "id": "source_question_fidelity",
+          "label": "保留的面经原题逐字一致",
+          "status": "pass",
+          "detail": "逐字保留 1 道面经原题。"
+        },
+        {
+          "id": "target_isolation",
+          "label": "只引用当前岗位材料",
+          "status": "pass",
+          "detail": "仅允许 JD-01、CV-01 和当前岗位面经来源 ID。"
+        },
+        {
+          "id": "deduplication",
+          "label": "题目不重复",
+          "status": "pass",
+          "detail": "发现 0 道归一化重复题。"
+        },
+        {
+          "id": "single_focus",
+          "label": "每道题保持单一问题",
+          "status": "pass",
+          "detail": "未发现多问句或明显并列追问。"
+        },
+        {
+          "id": "non_template_jd",
+          "label": "不使用模板式 JD 复述题",
+          "status": "pass",
+          "detail": "未发现通用“JD 提到……如何做到”题。"
+        },
+        {
+          "id": "category_coverage",
+          "label": "简历题和专业／JD 题均有覆盖",
+          "status": "pass",
+          "detail": "本次覆盖：role_capability、resume_deep_dive。"
+        },
+        {
+          "id": "category_balance",
+          "label": "两类题数量差不超过 2 道",
+          "status": "pass",
+          "detail": "简历题 3 道，岗位能力题 3 道，数量差 0 道。"
+        },
+        {
+          "id": "legal_scenario_coverage",
+          "label": "法务岗位包含至少 2 道模型情境题",
+          "status": "pass",
+          "detail": "模型生成的法务情境题 2 道。"
+        },
+        {
+          "id": "partial_success",
+          "label": "单题失败不清空有效结果",
+          "status": "pass",
+          "detail": "本次没有服务端跳过项。"
+        }
+      ],
+      "questions": [
+        {
+          "index": 1,
+          "title": "业务坚持使用高风险合同条款时，你会如何沟通并推进决策？",
+          "category": "role_capability",
+          "provenance": "source_question",
+          "sourceKinds": [
+            "interview_experience"
+          ],
+          "sourceIds": [
+            "golden-legal-source"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 2,
+          "title": "你提到“建立合同审查清单并识别责任限制、知识产权和数据使用风险”，当时清单里最先被业务团队拒绝或要求放宽的是哪一类条款？",
+          "category": "resume_deep_dive",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 3,
+          "title": "你负责“设计数据合规核对流程并向业务团队交付修改建议”，当时业务团队最常误解或抵触的是哪个合规要求？",
+          "category": "resume_deep_dive",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 4,
+          "title": "你提到“协调产品与安全团队完成高风险条款整改，在一周内整理证据并形成可追踪的风险闭环”，当时哪个证据最难获取或固定？",
+          "category": "resume_deep_dive",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "resume"
+          ],
+          "sourceIds": [
+            "CV-01"
+          ],
+          "quotedSourceCount": 1
+        },
+        {
+          "index": 5,
+          "title": "业务团队为拿下客户，要求接受一个可能违反数据最小化原则的条款，并称“竞争对手都接受”。你作为法务专员，会如何评估并推动决策？",
+          "category": "role_capability",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "jd",
+            "resume"
+          ],
+          "sourceIds": [
+            "JD-01",
+            "CV-01"
+          ],
+          "quotedSourceCount": 2
+        },
+        {
+          "index": 6,
+          "title": "你发现某业务部门在未通知法务的情况下，已使用一套包含第三方代码的开源组件，可能引发知识产权侵权风险。你会如何介入并推动整改？",
+          "category": "role_capability",
+          "provenance": "coach_generated",
+          "sourceKinds": [
+            "jd",
+            "resume"
+          ],
+          "sourceIds": [
+            "JD-01",
+            "CV-01"
+          ],
+          "quotedSourceCount": 2
+        }
+      ],
+      "warningCodes": [],
+      "questionCount": 6,
+      "manualReview": {
+        "status": "pass",
+        "roleRelevance": "通过。覆盖合同条款、数据最小化、开源组件知识产权、业务沟通和整改闭环。",
+        "questionDepth": "通过。3 道简历题追问真实阻力与证据难点，2 道模型岗位题提供具体业务冲突并要求形成处置决策。",
+        "coverageBalance": "通过。简历深挖 3 道、岗位能力 3 道，其中包含 1 道逐字面经原题和 2 道模型情境题。",
+        "notes": "情境识别器最初漏识别“业务团队”和“你发现”开头，人工确认后修正分类器与报告指标，没有重新调用模型。"
+      }
+    }
+  ]
+}
