@@ -3,9 +3,6 @@ INTERVIEW WORKBENCH MIGRATION MANIFEST
 PROJECT ROOT
 interview-workbench/
 
-PARENT PROJECT
-repository root (parent directory)
-
 KEEP
 src/
 docs/
@@ -25,13 +22,6 @@ deepseek-interview-bridge.ts
 deepseek-interview-bridge.test.ts
 .env.example
 .gitignore
-
-ALSO KEEP FROM PARENT
-AGENTS.md
-README.md
-outputs/MVP_PRD_V0.1.md
-docs/DECISIONS.md
-docs/WORKFLOW.md
 
 DO NOT COPY / DO NOT SHARE
 node_modules/
